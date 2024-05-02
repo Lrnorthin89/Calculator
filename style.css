@@ -1,11 +1,98 @@
-*, *:: before, *:: after {
-  box-sizing: border-box;
-  font-family: Gotham Rounded, sans-serif;
-  font-weight: normal;
+.calculator {
+  width: 250px;
+  margin: 20px;
+  border: 10px solid rgba(59, 59, 59, 0.891);
+  box-shadow: inset;
+  text-align: center;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/w-sZGDCPMbRTAs9JUz_FslzeP78=/0x0:4326x2856/1200x800/filters:focal(1817x1082:2509x1774)/cdn.vox-cdn.com/uploads/chorus_image/image/66174978/kobe_2_getty_ringer.0.jpg");
+  background-size: cover;
+  box-shadow: 10px 5px 10px rgba(197, 196, 196, 0.829);
+  padding: 75px;
+  border-radius: 10px;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    background: -o-linear-gradient(to right, #f5f7fa, #c3cfe2);
+#display {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  border: 20px rgb(114, 113, 113) ridge;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  background: rgb(105, 7, 176);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  color: white;
+  height: 40px;
+  text-shadow: 2px 2px 3px rgb(105, 7, 176);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-top: auto;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.buttons button {
+  border: 2px rgb(6, 12, 6) solid;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  font-size: 20px;
+  outline: auto;
+  outline-color: rgb(9, 10, 8);
+  cursor: pointer;
+  background-color: rgb(60, 60, 60);
+  color: rgb(105, 7, 176);
+}
+
+.clear {
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+#clear {
+  background: rgb(105, 7, 176);
+  color: white;
+  border: 2px rgb(6, 12, 6) solid;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.buttons button:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2rem);
+  background-color: rgb(96, 96, 96);
+  box-shadow: 10px 6px 5px rgb(109, 42, 225);
+}
+
+.buttons button:active {
+  transform: scale(1.1rem);
+  background-color: rgb(96, 96, 96);
+  box-shadow: 10px 6px 5px rgb(109, 42, 225);
+}
+
+
+
+
+
+/* video background */
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
