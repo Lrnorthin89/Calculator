@@ -16,9 +16,10 @@
   padding: 10px;
   margin: 10px auto;
   text-align: center;
+  font-size: 20px;
   border: 20px rgb(114, 113, 113) ridge;
   border-radius: 5px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   background: rgb(105, 7, 176);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -47,7 +48,8 @@ h3 {
   outline-color: rgb(9, 10, 8);
   cursor: pointer;
   background-color: rgb(60, 60, 60);
-  color: rgb(105, 7, 176);
+  color: rgb(155, 26, 247);
+  text-shadow: 2px 2px 4px white;
 }
 
 .clear {
@@ -66,6 +68,7 @@ h3 {
   margin: 5px;
   font-size: 20px;
 }
+
 
 .buttons button:hover {
   transition: all 0.2s ease-in-out;
